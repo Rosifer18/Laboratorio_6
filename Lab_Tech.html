@@ -1,0 +1,342 @@
+<HTML><HEAD>
+	<TITLE><sin_titulo></TITLE>
+	<STYLE type="text/css">
+		.SSD { color:#FFFFFF; background-color:#000000; }
+		.SS0 { color:#000000; background-color:#FFFFFF; }
+		.SS1 { color:#000000; background-color:#FFFFFF; }
+		.SS2 { font-style: italic; color:#969696; background-color:#FFFFFF; }
+		.SS3 { font-style: italic; color:#0000FF; background-color:#FFFFFF; }
+		.SS4 { color:#8E6B23; background-color:#FFFFFF; }
+		.SS5 { font-weight: bold; color:#000080; background-color:#FFFFFF; }
+		.SS6 { color:#FF0000; background-color:#FFFFFF; }
+		.SS7 { color:#FF0000; background-color:#FFFFFF; }
+		.SS8 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS9 { color:#238E23; background-color:#FFFFFF; }
+		.SS10 { font-weight: bold; color:#000000; background-color:#FFFFFF; }
+		.SS11 { color:#000000; background-color:#FFFFFF; }
+		.SS12 { color:#FF0000; background-color:#F0F0F0; }
+		.SS13 { color:#000000; background-color:#FFFFFF; }
+		.SS14 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS15 { color:#238E23; background-color:#FFFFFF; }
+		.SS16 { color:#000080; background-color:#FFFFFF; }
+		.SS17 { color:#42426F; background-color:#FFFFFF; }
+		.SS18 { color:#FF0000; background-color:#FFFFFF; }
+		.SS19 { color:#000000; background-color:#BFD8D8; }
+		.SS34 { font-weight: bold; color:#FF0000; background-color:#F0F0FF; }
+		.SS35 { font-weight: bold; color:#800000; background-color:#FFFFFF; }
+	</STYLE>
+</HEAD><BODY><PRE>
+<SPAN class="SS2">// MÓDULO 1: UTILIDADES (Equivalente a utilidades.py)</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">limpiar_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Longitud</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Mientras</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Subcadena</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" "</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinMientras</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Mientras</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Subcadena</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" "</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">-</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinMientras</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Subcadena</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">inicio</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pos_fin</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">es_valido</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_texto_no_vacio</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">es_valido</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Logico</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">es_valido</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Longitud</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">limpiar_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">))</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">es_valido</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_fecha</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">es_valido</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Logico</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Longitud</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">10</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Subcadena</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">3</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">3</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"/"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Subcadena</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">6</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">6</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"/"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">es_valido</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">es_valido</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">entrada</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">leer_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">mensaje</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">entrada</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">mensaje</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">entrada</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">entrada</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">limpiar_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">entrada</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">NO</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_texto_no_vacio</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">entrada</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Error: el campo no puede estar vacío."</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_texto_no_vacio</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">entrada</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">leer_fecha</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">mensaje</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">valida</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Logico</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">valida</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">mensaje</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">limpiar_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_texto_no_vacio</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_fecha</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">valida</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Error: fecha inválida. Use el formato dd/mm/aaaa (ej. 17/11/2026)."</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">valida</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cat_elegida</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">seleccionar_categoria</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cat_elegida</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Categorías disponibles:"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"  "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">". "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Seleccione el número de categoría (1-5): "</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&lt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Error: seleccione una opción válida de la lista."</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS11">cat_elegida</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">indice</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">buscar_equipo_por_codigo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo_buscar</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">indice</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cod_norm</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">cod_norm</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Mayusculas</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">limpiar_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">codigo_buscar</SPAN><SPAN class="SS10">))</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">indice</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Mayusculas</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">])</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cod_norm</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">indice</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS2">// MÓDULO 2: OPERACIONES Y MENÚ PRINCIPAL (Equivalente a main.py)</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS2">// 1. Registrar equipo disponible</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">SubProceso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">registrar_equipo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Por</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Referencia</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categoria</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"------- REGISTRAR NUEVO EQUIPO -------"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Mayusculas</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">leer_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Código del equipo (ej. LAP-01): "</SPAN><SPAN class="SS10">))</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">buscar_equipo_por_codigo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≠</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Error: ya existe un equipo registrado con el código "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">leer_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Nombre o descripción del equipo: "</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">categoria</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">seleccionar_categoria</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categoria</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Disponible"</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Equipo "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" ("</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">") registrado correctamente como Disponible."</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinSubProceso</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS2">// 2. Registrar un préstamo</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">SubProceso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">registrar_prestamo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_estudiante</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_p</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_d</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Por</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Referencia</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">estudiante</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"------- REGISTRAR PRÉSTAMO DE EQUIPO -------"</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"No hay equipos registrados en el laboratorio."</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Mayusculas</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">leer_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Ingrese el código del equipo a prestar: "</SPAN><SPAN class="SS10">))</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">buscar_equipo_por_codigo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Error: el código "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" no existe en el inventario."</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≠</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Disponible"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Error: el equipo "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" ("</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">") está marcado como No disponible."</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">estudiante</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">leer_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Nombre completo del estudiante: "</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">leer_fecha</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Fecha de préstamo (dd/mm/aaaa): "</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                
+                </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"No disponible"</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">pr_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">pr_estudiante</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">estudiante</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">pr_fecha_p</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">pr_fecha_d</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0">
+                
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Préstamo exitoso: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" asignado a "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">estudiante</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" ("</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fecha</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">")."</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinSubProceso</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS2">// 3. Devolver equipo</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">SubProceso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">devolver_equipo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_d</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fecha_dev</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"------- DEVOLVER EQUIPO -------"</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"No hay equipos registrados."</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Mayusculas</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">leer_texto</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Ingrese el código del equipo a devolver: "</SPAN><SPAN class="SS10">))</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">buscar_equipo_por_codigo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Error: el código "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" no existe en el inventario."</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Disponible"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Aviso: el equipo "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" ("</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">") ya figura como Disponible."</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">fecha_dev</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">leer_fecha</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Fecha de devolución (dd/mm/aaaa): "</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Disponible"</SPAN><SPAN class="SS0">
+            
+                </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS11">pr_fecha_d</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">fecha_dev</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+                
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Devolución registrada: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">idx</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" ("</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">") vuelve a estar Disponible."</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinSubProceso</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS2">// 4. Listar disponibilidad</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">SubProceso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">listar_disponibilidad</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">disponibles</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"------- INVENTARIO Y DISPONIBILIDAD LABTECH -------"</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"No hay equipos registrados todavía."</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">disponibles</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"CÓDIGO   | NOMBRE               | CATEGORÍA     | ESTADO"</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"----------------------------------------------------------------"</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"   | "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"   | "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"   | "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Disponible"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">disponibles</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">disponibles</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"----------------------------------------------------------------"</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Total equipos: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" | Disponibles: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">disponibles</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" | Prestados: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">-</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">disponibles</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinSubProceso</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS2">// 5. Consultar cantidad de equipos disponibles por categoría</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">SubProceso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">consultar_disponibles_por_categoria</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">c</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"------- DISPONIBILIDAD POR CATEGORÍA -------"</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"No hay equipos registrados."</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">c</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">c</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Disponible"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"- "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS11">c</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">": "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" disponible(s)"</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinSubProceso</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS2">// 6. Mostrar menú principal</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">SubProceso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">mostrar_menu</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"========== SISTEMA DE PRÉSTAMOS LABTECH =========="</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"1. Registrar equipo"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"2. Registrar préstamo"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"3. Devolver equipo"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"4. Listar disponibilidad general"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"5. Consultar disponibles por categoría"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"6. Salir"</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinSubProceso</SPAN><SPAN class="SS0">
+
+
+</SPAN><SPAN class="SS2">// ALGORITMO PRINCIPAL (Punto de entrada main)</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">Algoritmo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">SistemaPrestamosLabTech</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">// Arreglos paralelos para Equipos (capacidad máxima 100)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Dimension</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">100</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">100</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">100</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">100</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">// Arreglos paralelos para Préstamos (capacidad máxima 200)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Dimension</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_codigo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">200</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_estudiante</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">200</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_p</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">200</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_d</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">200</SPAN><SPAN class="SS10">],</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">200</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">// Arreglo de categorías válidas</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Dimension</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_estudiante</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_p</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_d</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Logico</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Laptop"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Adaptador"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">3</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Mouse"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">4</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Cable HDMI"</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">[</SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS10">]</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Kit básico"</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Sistema LabTech iniciado correctamente."</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">mostrar_menu</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Seleccione una opción (1-6): "</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&lt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">6</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Error: opción inválida. Elija un número del 1 al 6."</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Sino</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Segun</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">registrar_equipo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                    
+                </SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">registrar_prestamo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_estudiante</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_p</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_d</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                    
+                </SPAN><SPAN class="SS4">3</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">devolver_equipo</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_fecha_d</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">pr_activo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_prestamos</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                    
+                </SPAN><SPAN class="SS4">4</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">listar_disponibilidad</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_codigo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                    
+                </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">consultar_disponibles_por_categoria</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">eq_categoria</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">eq_estado</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_equipos</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">categorias</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                    
+                </SPAN><SPAN class="SS4">6</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Cerrando sistema LabTech... Hasta pronto."</SPAN><SPAN class="SS0">
+                    
+            </SPAN><SPAN class="SS5">FinSegun</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        
+    </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">6</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinAlgoritmo</SPAN><SPAN class="SS0">
+</SPAN>
+</PRE></BODY></HTML>
